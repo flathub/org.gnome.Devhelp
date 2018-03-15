@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.Devhelp",
     "runtime": "org.gnome.Sdk",
-    "runtime-version": "3.26",
+    "runtime-version": "3.28",
     "branch": "stable",
     "sdk": "org.gnome.Sdk",
     "command": "devhelp",
@@ -33,8 +33,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/devhelp/3.26/devhelp-3.26.0.tar.xz",
-                    "sha256": "6bf2714f7f953b5858c643585383c4e4c8e9c65055527505abbf24fbf1ac8e38"
+                    "url": "https://download.gnome.org/sources/devhelp/3.28/devhelp-3.28.0.tar.xz",
+                    "sha256": "1697752bd51e9ecd5bc8d85cfd19060d52b08df8f76c2d83be75dc724e3894ac "
                 }
             ]
         }
