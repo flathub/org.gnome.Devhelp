@@ -41,6 +41,7 @@ cleanup:
 modules:
   - name: devhelp
     config-opts: [ "--enable-flatpak-build" ]
+    run-tests: true
     sources:
       - type: archive
         url: https://download.gnome.org/sources/devhelp/3.28/devhelp-3.28.1.tar.xz
