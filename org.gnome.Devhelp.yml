@@ -1,10 +1,9 @@
 app-id: org.gnome.Devhelp
 runtime: org.gnome.Sdk
-runtime-version: 3.28
+runtime-version: 3.30
 branch: stable
 sdk: org.gnome.Sdk
 command: devhelp
-rename-icon: devhelp
 
 finish-args:
   # X11 + XShm access
@@ -39,10 +38,18 @@ cleanup:
   - "*.a"
 
 modules:
-  - name: devhelp
-    config-opts: [ "--enable-flatpak-build" ]
+  - name: amtk
     run-tests: true
     sources:
       - type: archive
-        url: https://download.gnome.org/sources/devhelp/3.28/devhelp-3.28.1.tar.xz
-        sha256: da1ce2c66ba54908c2de5ae6b59255f02b13ca3bf98cf6c198c87c2c7fec4821
+        url: https://download.gnome.org/sources/amtk/5.0/amtk-5.0.0.tar.xz
+        sha256: 12a996978a30b7b69a810ac0c5656d5cf2f58d9787b98a0c028ff1b64e8f31ff
+
+  - name: devhelp
+    buildsystem: meson
+    config-opts: [ "-Dflatpak_build=true" ]
+    run-tests: true
+    sources:
+      - type: archive
+        url: https://download.gnome.org/sources/devhelp/3.30/devhelp-3.30.0.tar.xz
+        sha256: 25526a41f0f417e89c0b9c3c9e8d43a581e00aa3745a259b41b2a10daca6f1e7
