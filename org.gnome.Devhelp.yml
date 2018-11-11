@@ -1,6 +1,6 @@
 app-id: org.gnome.Devhelp
 runtime: org.gnome.Sdk
-runtime-version: 3.30
+runtime-version: '3.30'
 branch: stable
 sdk: org.gnome.Sdk
 command: devhelp
@@ -23,8 +23,6 @@ finish-args:
   - --env=DCONF_USER_CONFIG_DIR=.config/dconf
 
 build-options:
-  cflags: -O2 -g
-  cxxflags: -O2 -g
   env: { V: '1' }
 
 cleanup:
