@@ -37,7 +37,6 @@ cleanup:
 
 modules:
   - name: amtk
-    run-tests: true
     sources:
       - type: archive
         url: https://download.gnome.org/sources/amtk/5.0/amtk-5.0.0.tar.xz
@@ -46,7 +45,6 @@ modules:
   - name: devhelp
     buildsystem: meson
     config-opts: [ "-Dflatpak_build=true" ]
-    run-tests: true
     sources:
       - type: archive
         url: https://download.gnome.org/sources/devhelp/3.30/devhelp-3.30.0.tar.xz
