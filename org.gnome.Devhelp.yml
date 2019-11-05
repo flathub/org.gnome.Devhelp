@@ -1,6 +1,6 @@
 app-id: org.gnome.Devhelp
 runtime: org.gnome.Sdk
-runtime-version: '3.32'
+runtime-version: '3.34'
 branch: stable
 sdk: org.gnome.Sdk
 command: devhelp
@@ -39,13 +39,13 @@ modules:
   - name: amtk
     sources:
       - type: archive
-        url: https://download.gnome.org/sources/amtk/5.0/amtk-5.0.0.tar.xz
-        sha256: 12a996978a30b7b69a810ac0c5656d5cf2f58d9787b98a0c028ff1b64e8f31ff
+        url: https://download.gnome.org/sources/amtk/5.0/amtk-5.0.1.tar.xz
+        sha256: 2d1cf4a4468655f93c90a2dde2e08b1ea0b3960c0aee04eb206c201d7849de27
 
   - name: devhelp
     buildsystem: meson
     config-opts: [ "-Dflatpak_build=true" ]
     sources:
       - type: archive
-        url: https://download.gnome.org/sources/devhelp/3.32/devhelp-3.32.0.tar.xz
-        sha256: d8aa7efcdd270ff1854a602efd466327d60c207e83ba721ee349ccf7fe404a1b
+        url: https://download.gnome.org/sources/devhelp/3.34/devhelp-3.34.0.tar.xz
+        sha256: ef920537b0afeaadeece765cdb326e471b0d5c2b2ac646ecf62abef99cb1f57e
