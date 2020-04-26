@@ -47,5 +47,5 @@ modules:
     config-opts: [ "-Dflatpak_build=true" ]
     sources:
       - type: archive
-        url: https://download.gnome.org/sources/devhelp/3.36/devhelp-3.36.1.tar.xz
-        sha256: 4cf8ec9302bc4a79e01ac53bd9c8b95a596f71f35351f48b63263227f09a8a3d
+        url: https://download.gnome.org/sources/devhelp/3.36/devhelp-3.36.2.tar.xz
+        sha256: 8b5a84319efbb2ef1bc4022ee3ed2d6678794eba2dfa993e50e03d6e7b930c5e
