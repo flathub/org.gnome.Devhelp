@@ -1,6 +1,6 @@
 app-id: org.gnome.Devhelp
 runtime: org.gnome.Sdk
-runtime-version: '3.38'
+runtime-version: '40'
 branch: stable
 sdk: org.gnome.Sdk
 command: devhelp
@@ -42,5 +42,5 @@ modules:
     config-opts: [ "-Dflatpak_build=true" ]
     sources:
       - type: archive
-        url: https://download.gnome.org/sources/devhelp/3.38/devhelp-3.38.0.tar.xz
-        sha256: 918efb173122b26d45fa51c194a0b659e63fee7705f6722db2534fabc3452369
+        url: https://download.gnome.org/sources/devhelp/40/devhelp-40.0.tar.xz
+        sha256: 4db6d853de5f4ef2eb749ede6e32c726c5fba13cd75558fa604c1a562e26267f
