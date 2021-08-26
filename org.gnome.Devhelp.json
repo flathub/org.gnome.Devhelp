@@ -1,10 +1,10 @@
 {
-    "app-id" : "org.gnome.Devhelp",
-    "runtime" : "org.gnome.Platform",
-    "runtime-version" : "40",
-    "sdk" : "org.gnome.Sdk",
-    "command" : "devhelp",
-    "finish-args" : [
+    "app-id": "org.gnome.Devhelp",
+    "runtime": "org.gnome.Platform",
+    "runtime-version": "40",
+    "sdk": "org.gnome.Sdk",
+    "command": "devhelp",
+    "finish-args": [
         "--share=ipc",
         "--socket=fallback-x11",
         "--socket=wayland",
@@ -12,7 +12,7 @@
         "--filesystem=host:ro",
         "--metadata=X-DConf=migrate-path=/org/gnome/devhelp/"
     ],
-    "cleanup" : [
+    "cleanup": [
         "/include",
         "/lib/pkgconfig",
         "/share/pkgconfig",
@@ -34,27 +34,31 @@
                     "url": "https://download.gnome.org/sources/amtk/5.3/amtk-5.3.1.tar.xz",
                     "sha256": "d5aa236c5d71dc41aa4674f345560a67a27f21c0efc97c9b3da09cb582b4638b",
                     "x-checker-data": {
-                      "type": "gnome",
-                      "name": "amtk"
+                        "type": "gnome",
+                        "name": "amtk"
                     }
                 }
             ]
         },
         {
-            "name" : "devhelp",
-            "buildsystem" : "meson",
-            "config-opts" : [
+            "name": "devhelp",
+            "buildsystem": "meson",
+            "config-opts": [
                 "-Dflatpak_build=true",
                 "-Dprofile=stable",
                 "-Dgtk_doc=false",
                 "-Dbuildtype=release"
             ],
-            "run-tests" : true,
-            "sources" : [
+            "run-tests": true,
+            "sources": [
                 {
-                    "type" : "git",
-                    "url" : "https://gitlab.gnome.org/GNOME/devhelp.git",
-                    "tag": "40.1"
+                    "type": "git",
+                    "url": "https://gitlab.gnome.org/GNOME/devhelp.git",
+                    "tag": "40.1",
+                    "x-checker-data": {
+                        "type": "gnome",
+                        "name": "devhelp"
+                    }
                 }
             ]
         }
