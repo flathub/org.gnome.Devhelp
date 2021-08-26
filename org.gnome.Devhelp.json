@@ -54,8 +54,7 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/GNOME/devhelp.git",
-                    "tag": "40.0",
-                    "commit": "0db498d2b95c6efb739b9372fd3f5803d3851e9e"
+                    "tag": "40.1"
                 }
             ]
         }
