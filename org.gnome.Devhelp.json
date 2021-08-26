@@ -1,0 +1,63 @@
+{
+    "app-id" : "org.gnome.Devhelp",
+    "runtime" : "org.gnome.Platform",
+    "runtime-version" : "master",
+    "sdk" : "org.gnome.Sdk",
+    "command" : "devhelp",
+    "finish-args" : [
+        "--share=ipc",
+        "--socket=fallback-x11",
+        "--socket=wayland",
+        "--device=dri",
+        "--filesystem=host:ro",
+        "--metadata=X-DConf=migrate-path=/org/gnome/devhelp/"
+    ],
+    "cleanup" : [
+        "/include",
+        "/lib/pkgconfig",
+        "/share/pkgconfig",
+        "man",
+        "share/man",
+        "*.a"
+    ],
+    "modules" : [
+        {
+            "name": "amtk",
+            "buildsystem": "meson",
+            "config-opts": [
+                "-Dgtk_doc=false",
+                "-Dbuildtype=release"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/amtk/5.3/amtk-5.3.1.tar.xz",
+                    "sha256": "d5aa236c5d71dc41aa4674f345560a67a27f21c0efc97c9b3da09cb582b4638b",
+                    "x-checker-data": {
+                      "type": "gnome",
+                      "name": "amtk"
+                    }
+                }
+            ]
+        },
+        {
+            "name" : "devhelp",
+            "buildsystem" : "meson",
+            "config-opts" : [
+                "-Dflatpak_build=true",
+                "-Dprofile=stable",
+                "-Dgtk_doc=false",
+                "-Dbuildtype=release"
+            ],
+            "run-tests" : true,
+            "sources" : [
+                {
+                    "type" : "git",
+                    "url" : "https://gitlab.gnome.org/GNOME/devhelp.git",
+                    "tag": "40.0",
+                    "commit": "0db498d2b95c6efb739b9372fd3f5803d3851e9e"
+                }
+            ]
+        }
+    ]
+}
