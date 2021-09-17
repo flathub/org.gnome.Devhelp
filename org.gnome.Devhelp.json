@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.Devhelp",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "40",
+    "runtime-version": "41",
     "sdk": "org.gnome.Sdk",
     "command": "devhelp",
     "finish-args": [
@@ -22,25 +22,6 @@
     ],
     "modules" : [
         {
-            "name": "amtk",
-            "buildsystem": "meson",
-            "config-opts": [
-                "-Dgtk_doc=false",
-                "-Dbuildtype=release"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://download.gnome.org/sources/amtk/5.3/amtk-5.3.1.tar.xz",
-                    "sha256": "d5aa236c5d71dc41aa4674f345560a67a27f21c0efc97c9b3da09cb582b4638b",
-                    "x-checker-data": {
-                        "type": "gnome",
-                        "name": "amtk"
-                    }
-                }
-            ]
-        },
-        {
             "name": "devhelp",
             "buildsystem": "meson",
             "config-opts": [
@@ -54,7 +35,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/devhelp.git",
-                    "tag": "40.1",
+                    "tag": "41.0",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "devhelp"
