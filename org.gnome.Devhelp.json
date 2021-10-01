@@ -35,7 +35,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/devhelp.git",
-                    "tag": "41.1",
+                    "tag": "41.2",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "devhelp"
