@@ -1,6 +1,6 @@
 {
     "app-id": "org.gnome.Devhelp",
-    "runtime": "org.gnome.Platform",
+    "runtime": "org.gnome.Sdk",
     "runtime-version": "41",
     "sdk": "org.gnome.Sdk",
     "command": "devhelp",
