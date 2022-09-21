@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.Devhelp",
     "runtime": "org.gnome.Sdk",
-    "runtime-version": "42",
+    "runtime-version": "43",
     "sdk": "org.gnome.Sdk",
     "command": "devhelp",
     "finish-args": [
@@ -35,7 +35,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/devhelp.git",
-                    "tag": "41.3",
+                    "tag": "43.0",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "devhelp"
