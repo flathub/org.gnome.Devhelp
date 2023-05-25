@@ -3,7 +3,7 @@
     "runtime": "org.gnome.Sdk",
     "runtime-version": "44",
     "sdk": "org.gnome.Sdk",
-    "sdk-extensions": [
+    "runtime-extensions": [
         "org.gnome.Sdk.Docs"
     ],
     "command": "devhelp",
