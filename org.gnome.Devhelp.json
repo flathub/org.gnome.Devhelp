@@ -1,5 +1,5 @@
 {
-    "app-id": "org.gnome.Devhelp",
+    "id": "org.gnome.Devhelp",
     "runtime": "org.gnome.Sdk",
     "runtime-version": "44",
     "sdk": "org.gnome.Sdk",
@@ -20,7 +20,7 @@
         "share/man",
         "*.a"
     ],
-    "modules" : [
+    "modules": [
         {
             "name": "devhelp",
             "buildsystem": "meson",
