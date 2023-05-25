@@ -3,6 +3,9 @@
     "runtime": "org.gnome.Sdk",
     "runtime-version": "44",
     "sdk": "org.gnome.Sdk",
+    "sdk-extensions": [
+        "org.gnome.Sdk.Docs"
+    ],
     "command": "devhelp",
     "finish-args": [
         "--share=ipc",
@@ -20,7 +23,7 @@
         "share/man",
         "*.a"
     ],
-    "modules" : [
+    "modules": [
         {
             "name": "devhelp",
             "buildsystem": "meson",
