@@ -12,6 +12,13 @@
         "--filesystem=host:ro",
         "--metadata=X-DConf=migrate-path=/org/gnome/devhelp/"
     ],
+    "add-extensions": {
+        "org.gnome.Sdk.Docs": {
+            "directory": "share/runtime/docs",
+            "autodelete": true,
+            "no-autodownload": false
+        }
+    },
     "cleanup": [
         "/include",
         "/lib/pkgconfig",
