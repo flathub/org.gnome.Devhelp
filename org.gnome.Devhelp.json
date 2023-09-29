@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.Devhelp",
     "runtime": "org.gnome.Sdk",
-    "runtime-version": "44",
+    "runtime-version": "45",
     "sdk": "org.gnome.Sdk",
     "command": "devhelp",
     "finish-args": [
