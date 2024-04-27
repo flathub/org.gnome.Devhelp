@@ -1,0 +1,21 @@
+diff --git a/data/org.gnome.Devhelp.appdata.xml.in.in b/data/org.gnome.Devhelp.appdata.xml.in.in
+index 7d980ee..057ba33 100644
+--- a/data/org.gnome.Devhelp.appdata.xml.in.in
++++ b/data/org.gnome.Devhelp.appdata.xml.in.in
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <component type="desktop">
+-  <id>@application_id@.desktop</id>
++  <id>@application_id@</id>
+   <metadata_license>CC0-1.0</metadata_license>
+   <project_license>GPL-3.0-or-later</project_license>
+   <name>Devhelp</name>
+@@ -27,6 +27,8 @@
+       Emacs, Geany, …).
+     </p>
+   </description>
++  <launchable type="desktop-id">@application_id@.desktop</launchable>
++  <developer_name>The GNOME Project</developer_name>
+   <url type="homepage">https://wiki.gnome.org/Apps/Devhelp/</url>
+   <url type="bugtracker">https://gitlab.gnome.org/GNOME/devhelp/issues</url>
+   <url type="donation">https://www.gnome.org/donate/</url>
