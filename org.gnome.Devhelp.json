@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.Devhelp",
     "runtime": "org.gnome.Sdk",
-    "runtime-version": "45",
+    "runtime-version": "46",
     "sdk": "org.gnome.Sdk",
     "command": "devhelp",
     "finish-args": [
@@ -40,6 +40,10 @@
                         "type": "gnome",
                         "name": "devhelp"
                     }
+                },
+                {
+                    "type": "patch",
+                    "path": "patches/devhelp-appstream.patch"
                 }
             ]
         }
